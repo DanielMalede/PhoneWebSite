@@ -1,0 +1,26 @@
+/* src="home page video.gif" */
+
+#canvasVideo{
+    animation: main-videos 12s infinite alternate ;
+    height: 40vh;
+}
+@keyframes main-videos {
+    0%{
+        background-image: url(samsung.gif);
+        background-size: 100% 100%;
+    }
+    50%{
+        background-image: url(homepagevideo.gif);
+        background-size: 100% 100%;
+    }
+    100%{
+        background-image: url(lgWing.gif);
+        background-size: 100% 100%;
+    } 
+}
+/* #firstCards{
+    border: solid 2px red;
+} */
+body{
+    background-image: linear-gradient(to bottom right ,black,rgb(77, 76, 76),black);
+}
