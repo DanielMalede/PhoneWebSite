@@ -6,15 +6,15 @@
 }
 @keyframes main-videos {
     0%{
-        background-image: url(samsung.gif);
+        background-image: url(/samsung.gif);
         background-size: 100% 100%;
     }
     50%{
-        background-image: url(homepagevideo.gif);
+        background-image: url(/homepagevideo.gif);
         background-size: 100% 100%;
     }
     100%{
-        background-image: url(lgWing.gif);
+        background-image: url(/lgWing.gif);
         background-size: 100% 100%;
     } 
 }
