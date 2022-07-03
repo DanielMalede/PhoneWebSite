@@ -29,12 +29,10 @@
     background-image: url(/images/photohead.jpg);
     background-size: 100% 100%;
 }
-/* #headtitle{
-    background-image: linear-gradient(to bottom right ,red ,rgb(122, 25, 178));
-} */
 a:hover{
     color:red
 }
 a{
-    text-decoration: none;
+    color: rgb(63, 120, 243);
+    text-decoration: none   ;
 }
