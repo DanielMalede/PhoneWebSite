@@ -32,6 +32,9 @@
 /* #headtitle{
     background-image: linear-gradient(to bottom right ,red ,rgb(122, 25, 178));
 } */
-h5:hover{
+a:hover{
     color:red
+}
+a{
+    text-decoration: none;
 }

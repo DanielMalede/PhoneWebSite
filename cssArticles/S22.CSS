@@ -1,0 +1,25 @@
+#S22canvas {
+    height: 90vh;
+    background-image: url(../images/s22ArticlesImage/2.webp);
+    background-size: 100% 100%;
+}
+#s22image1{
+    height: 40vh;
+    background-image: url(../images/s22ArticlesImage/1.webp);
+    background-size: 100% 100%;
+}
+#s22image2{
+    height: 35vh;
+    background-image: url(../images/s22ArticlesImage/3.webp);
+    background-size: 100% 100%;
+}
+#s22image3{
+    height: 45vh;
+    background-image: url(../images/s22ArticlesImage/4.webp);
+    background-size: 100% 100%;
+}
+/* #s22image1{
+    height: 90vh;
+    background-image: url(../images/s22ArticlesImage/2.webp);
+    background-size: 100% 100%;
+} */
