@@ -1,20 +1,20 @@
 /* src="home page video.gif" */
 
 #canvasVideo{
-    animation: main-videos 12s infinite alternate ;
+    animation: mainvideos 12s infinite alternate ;
     height: 40vh;
 }
-@keyframes main-videos {
+@keyframes mainvideos {
     0%{
-        background-image: url(/images/homepagevideo.gif);
+        background-image: url(./images/samsung.gif);
         background-size: 100% 100%;
     }
     75%{
-        background-image: url(/images/lgWing.gif);
+        background-image: url(./images/homepagevideo.gif);
         background-size: 100% 100%;
     }
     100%{
-        background-image: url(/images/samsung.gif);
+        background-image: url(./images/lgWing.gif);
         background-size: 100% 100%;
     } 
 }
