@@ -6,21 +6,32 @@
 }
 @keyframes main-videos {
     0%{
-        background-image: url(/samsung.gif);
+        background-image: url(/images/homepagevideo.gif);
         background-size: 100% 100%;
     }
-    50%{
-        background-image: url(/homepagevideo.gif);
+    75%{
+        background-image: url(/images/lgWing.gif);
         background-size: 100% 100%;
     }
     100%{
-        background-image: url(/lgWing.gif);
+        background-image: url(/images/samsung.gif);
         background-size: 100% 100%;
     } 
 }
 /* #firstCards{
     border: solid 2px red;
 } */
-body{
-    background-image: linear-gradient(to bottom right ,black,rgb(77, 76, 76),black);
+#backgroundBody{
+    background-image: linear-gradient(to bottom right ,red ,blue);
+}
+#headphoto{
+    height: 25vh;
+    background-image: url(/images/photohead.jpg);
+    background-size: 100% 100%;
+}
+/* #headtitle{
+    background-image: linear-gradient(to bottom right ,red ,rgb(122, 25, 178));
+} */
+h5:hover{
+    color:red
 }
