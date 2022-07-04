@@ -8,7 +8,7 @@
     <title>Let's Talk Spec - Contact</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-    <link rel="stylesheet" href="/CSSpages/">
+    <link rel="stylesheet" href="../CSSpages/contact.css">
     <link rel="stylesheet" href="../CssGeneral.css">
     <link rel="icon" href="../images/HomePageImage/LOGO.png">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
@@ -20,7 +20,8 @@
         <div class="container-fluid ">
             <img style="height: 5vh;" class="navbar-brand" src="../images/HomePageImage/LOGO.png">
 
-            <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+            <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapsibleNavbar">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse active" id="collapsibleNavbar">
@@ -29,31 +30,22 @@
                     <span class="nav-item"><a class="nav-link active" href="../pagesHTML/cards.html">Stuff</a></span>
                     <span class="nav-item"><a class="nav-link active" href="../pagesHTML/Phones.html">Phones</a></span>
                     <span class="nav-item"><a class="nav-link active" href="../pagesHTML/About.html">About</a></span>
-                    <span class="nav-item"><a class="nav-link active" href="../pagesHTML/Contact.html">Contact</a></span>
-                            
+                    <span class="nav-item"><a class="nav-link active"
+                            href="../pagesHTML/Contact.html">Contact</a></span>
+
                 </ul>
             </div>
         </div>
     </nav>
 
     <form>
-        <div class="container text-center mt-5 pt-5 ">
-            <div class="row d-flex justify-content-evenly align-items-md-center">
-                <div class="col-md-4 col-sm-12">
-                    <h3>Always here for you</h3>
-                </div>
-                <div class="col-sm-12">___________________</div>
-                <br><br>
-                <div class="col-md-4 col-sm-12"> <img src="../images/HomePageImage/LOGO.png" class="img-fluid h-50" alt="Responsive image">
-                </div>
-            </div>
-            <br>
-            <h1> Contact Lets Talk Spec</h1>
-            <div class="row flex-column text-sm-center text-md-start text-start p-5 ">
-                <br>
-                <div class="col">
-                    <h4>HELLO! WHY ARE YOU CONTACTING US TODAY?
-                    </h4>
+        <div class="container text-center mt-5 pt-3 ">
+            <h1 class="fw-light fs-1"> Contact Lets Talk Spec</h1>
+            <div class="row row-cols-md-3 row-cols-1 pt-5 mx-md-5 ">
+                <div class="col text-md-start ">
+                    <p class="fw-light fs-3">HELLO! WHY ARE YOU CONTACTING US TODAY?
+                    </p>
+                    <br>
                     <select id="userOption">
                         <option value="">Please select</option>
                         <option value="">I want to pitch a story</option>
@@ -63,38 +55,34 @@
                         <option value="">I Contact the owners</option>
                         <option value="">Something else</option>
                     </select>
-                </div>
-                <br>
-                <h4>Tell Us About You:</h4>
-                <div class="col">
+                    <br><br>
+                    <p class="fw-light fs-4">Tell Us About You:</p>
+                    <br>
                     <label for="FirstName">First and last name*:</label>
                     <br>
                     <input id="FirstName" type="text">
-                </div>
-                <br>
-                <div class="col">
+                    <br><br>
                     <label for="email">Email adrress*:</label>
                     <br>
                     <input id="email" type="text">
-                </div>
-                <br>
-                <div class="col">
+                    <br><br>
                     <label for="phoneNumber">Phone number:</label>
                     <br>
                     <input id="phoneNumber" type="text">
-                </div>
-                <br>
-                <div class="col">
+                    <br><br>
                     <label for="country">country*:</label>
                     <br>
                     <input id="country" type="text">
-                </div>
-                <br>
-                <div class="col">
+                    <br><br>
                     <button>
                         Submit
                     </button>
                     <br>
+                </div>
+                <div class="col"></div>
+                <div class="col mt-md-5 pt-md-5">
+                    <p class="fw-light fs-3">Always here for you</p class="fw-light fs-3">
+                    <img src="../images/HomePageImage/LOGO.png" class="img-fluid h-50" alt="Responsive image">
                 </div>
             </div>
 
