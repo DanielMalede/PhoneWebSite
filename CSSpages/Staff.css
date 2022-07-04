@@ -1,0 +1,12 @@
+tr{
+    border: solid 3px black;
+    width: 1vw;
+}
+td{
+    border: solid 3px black;
+    width: 1vw;
+
+}
+table.table{
+    width: 20vw;
+}

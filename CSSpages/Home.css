@@ -1,0 +1,38 @@
+/* src="home page video.gif" */
+
+#canvasVideo{
+    animation: mainvideos 12s infinite alternate ;
+    height: 40vh;
+}
+@keyframes mainvideos {
+    0%{
+        background-image: url(../images/HomePageImage/homepagevideo.gif);
+        background-size: 100% 100%;
+    }
+    75%{
+        background-image: url(../images/HomePageImage/lgWing.gif);
+        background-size: 100% 100%;
+    }
+    100%{
+        background-image: url(../images/HomePageImage/samsung.gif);
+        background-size: 100% 100%;
+    } 
+}
+/* #firstCards{
+    border: solid 2px red;
+} */
+#backgroundBody{
+    background-image: linear-gradient(to top right ,rgb(213, 57, 57),blue,purple,red ,blue,rgb(218, 34, 144));
+}
+#headphoto{
+    height: 25vh;
+    background-image: url(./images/HomePageImage/canvas.jpg);
+    background-size: 100% 100%;
+}
+a:hover{
+    color:red
+}
+a{
+    color: rgb(63, 120, 243);
+    text-decoration: none   ;
+}
