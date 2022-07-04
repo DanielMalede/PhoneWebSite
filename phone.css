@@ -6,15 +6,15 @@
 }
 @keyframes mainvideos {
     0%{
-        background-image: url(./images/samsung.gif);
+        background-image: url(./images/HomePageImage/homepagevideo.gif);
         background-size: 100% 100%;
     }
     75%{
-        background-image: url(./images/homepagevideo.gif);
+        background-image: url(./images/HomePageImage/lgWing.gif);
         background-size: 100% 100%;
     }
     100%{
-        background-image: url(./images/lgWing.gif);
+        background-image: url(./images/HomePageImage/samsung.gif);
         background-size: 100% 100%;
     } 
 }
@@ -26,7 +26,7 @@
 }
 #headphoto{
     height: 25vh;
-    background-image: url(./images/photohead.jpg);
+    background-image: url(./images/HomePageImage/photohead.jpg);
     background-size: 100% 100%;
 }
 a:hover{
