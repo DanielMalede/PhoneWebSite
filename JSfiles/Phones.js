@@ -11,21 +11,21 @@ async function getUsers() {
   }
 }
 let phonesImageArray = [
-    '1phone.webp',
-    '2phone.webp',
-    '3phone.webp',
-    '4phone.webp',
-    '5phone.webp',
-    '6phone.webp',
-    '7phone.webp',
-    '8phone.webp',
-    '9phone.webp',
-    '10phone.webp',
-    '11phone.webp',
-    '12phone.webp',
-    '13phone.webp',
-    '14phone.webp',
-    '15phone.webp',
+    '1phone.png',
+    '2phone.png',
+    '3phone.png',
+    '4phone.png',
+    '5phone.png',
+    '6phone.png',
+    '7phone.png',
+    '8phone.png',
+    '9phone.png',
+    '10phone.png',
+    '11phone.png',
+    '12phone.png',
+    '13phone.png',
+    '14phone.png',
+    '15phone.png',
 ]
 function printusersinfo() {
   getUsers().then((result) => {
@@ -33,7 +33,7 @@ function printusersinfo() {
       container.innerHTML += `
             <div class=" px-3 pb-5 ">
             <div class="bg-dark col card w-100" >
-            <img class="img-fluid" src="../images/PhonesPhotos/${phonesImageArray[index]}">
+            <img src="../images/PhonesPhotos/${phonesImageArray[index]} ">
             <div class="card-body text-white">
             <p>${item.picture}</p>
             <p><b>Brand</b> : ${item.brand}</p>
