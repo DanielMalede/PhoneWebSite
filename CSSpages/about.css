@@ -1,0 +1,18 @@
+#HeadText{
+    height: 100vh;
+    width: 100vw;
+    z-index: -1;
+}
+#trainwithus{
+    text-decoration: none;
+}
+#trainwithus:hover{
+    background-color: red;
+}
+#buttonmain{
+    z-index: 1;
+    position:absolute;
+}
+#agetstart{
+    background-color: transparent;
+}
