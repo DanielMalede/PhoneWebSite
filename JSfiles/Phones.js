@@ -31,23 +31,25 @@ function printusersinfo() {
   getUsers().then((result) => {
     result.forEach((item,index) => {
       container.innerHTML += `
-            <div class=" px-3 pb-5 style="height: ;" ">
-            <div class="bg-dark col card " >
-            <img src="../images/PhonesPhotos/${phonesImageArray[index]} ">
-            <div class="card-body text-white">
-            <p>${item.picture}</p>
-            <p><b>Brand</b> : ${item.brand}</p>
-            <p><b>Color</b> : ${item.color}</p>
-            <p><b>Ram</b> : ${item.ram}</p>
-            <p><b>Realse Date</b> : ${item.createdAt}</p>
-            <p><b>Price</b> : ${item.price}</p>
-            <p><b>In Stores</b> : ${item.isAvailable}</p>
+            <div id="cardphonenum[${index}]" class=" col w-25 px-4 pb-5  style="height: ;" ">
+            <div class="card col" >
+            <img class="card-img-top"src="../images/PhonesPhotos/${phonesImageArray[index]} ">
+            <div class="card-body">
+            <h3>Brand :<b> ${item.brand}</b></h3>
+            <br>
+            <p><b>Brand</b> : ${item.brand} | <b>Color</b> : ${item.color}</p>
+            <p><b>Realse</b> : ${item.createdAt} | <b>Ram</b> : ${item.ram}</p>
+            <p><b>Price</b> : ${item.price} | <b>In Stores</b> : ${item.isAvailable}</p>
             <br><br>
             </div>
             </div>
             </div>
             `;
-    });
-  });
-}
-printusersinfo();
+          });
+        });
+      }
+      printusersinfo();
+      id="cardphonenum[${index}]"
+      // <p><b>Realse Date</b> : ${item.createdAt}</p>
+      // <p><b>Color</b> : ${item.color}</p>
+      // <p><b>In Stores</b> : ${item.isAvailable}</p>

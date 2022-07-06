@@ -1,0 +1,18 @@
+body{
+    background-color: black;
+}
+label{
+    color: red;
+}
+h1{
+    color: red;
+}
+p{
+    color: red;
+}
+button{
+    color: red;
+}
+#formContainer{
+    background-image: linear-gradient(to bottom right, black , rgb(36, 35, 35),black);
+}

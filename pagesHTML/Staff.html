@@ -34,29 +34,62 @@
     </div>
   </nav>
 
-  <div class="container text-center mt-5 d-flex flex-column ">
-    <table class="container" id="mytable">
-      <h1 class="mb-5"><i>Get to know our team</i></h1>
+  <div class="container d-flex justify-content-center text-start mt-5 ">
+    <h1 class="mb-5"><i>Get to know our team</i></h1>
+    <table class="container " id="mytable">
+      <tr>
+        <td>First Name</td>
+        <td>Last Name</td>
+        <td>Email</td>
+        <td>Age</td>
+      </tr>
     </table>
-    <!-- </form> -->
   </div>
+
   <br><br>
-  <div class="container d-flex flex-column justify-content-center w-50">
-    <input type="text" name="" id="FirstNameUser">
-    <br>
-    <input type="text" name="" id="LastNameUser">
-    <br>
-    <input type="text" name="" id="AgeUser">
-    <br>
-    <input type="text" name="" id="EmailUser">
-    <br>
-    <input type="text" name="" id="PhoneUser">
-    <br>
-    <input type="text" name="" id="PictureUser">
-    <br>
-    <button onclick="addUser()">
-      click to join Us
-    </button>
+
+  <div class="w-25">
+    <div class="row mb-4">
+      <div class="col">
+        <div class="form-outline">
+          <input type="text" id="FirstNameUser" class="form-control" />
+          <label class="form-label" for="FirstNameUser">First name</label>
+        </div>
+      </div>
+      <div class="col">
+        <div class="form-outline">
+          <input type="text" id="LastNameUser" class="form-control" />
+          <label class="form-label" for="LastNameUser">Last name</label>
+        </div>
+      </div>
+    </div>
+
+    <div class="form-outline mb-4">
+      <input type="text" id="addressUser" class="form-control" />
+      <label class="form-label" for="addressUser">Address</label>
+    </div>
+
+    <div class="form-outline mb-4">
+      <input type="number" id="AgeUser" class="form-control" />
+      <label class="form-label" for="AgeUser">Age</label>
+    </div>
+
+    <div class="form-outline mb-4">
+      <input type="email" id="EmailUser" class="form-control" />
+      <label class="form-label" for="EmailUser">Email</label>
+    </div>
+
+    <div class="form-outline mb-4">
+      <input type="number" id="PhoneUser" class="form-control" />
+      <label class="form-label" for="PhoneUser">Phone</label>
+    </div>
+
+    <div class="form-outline mb-4">
+      <textarea class="form-control" id="form6Example7" rows="4"></textarea>
+      <label class="form-label" for="form6Example7">Additional information</label>
+    </div>
+
+    <button type="submit" class="btn btn-dark btn-block mb-4 text-white">Click To Submit</button>
   </div>
 
   <footer class="bg-black text-white text-lg-start border-top mt-5">

@@ -1,33 +1,34 @@
 const API = `https://my-json-server.typicode.com/Jeck99/fake-server/users`;
 let container = document.getElementById("mytable");
-// async function getUsers() {
-//   try {
-//     return await fetch(API).then((response) => response.json());
-//   } catch (error) {}
-// }
+async function getUsers() {
+  try {
+    return await fetch(API).then((response) => response.json());
+  } catch (error) {}
+}
 
-// let imageUserArray = [
-//   '1.jpg',
-//   '2.webp',
-//   '3.jpg',
-//   '4.jpg',
-//   '5.png',
-//   '6.jpg'
-// ];
+let imageUserArray = [
+  '1.jpg',
+  '2.webp',
+  '3.jpg',
+  '4.jpg',
+  '5.png',
+  '6.jpg'
+];
 
-// function printusersinfo() {
-//   getUsers().then((result) => {
-//     result.forEach((item,index) => {
-//       container.innerHTML += `<tr>
-//       <td>${item.name.first} : ${item.name.last}</td> 
-//       <td>${item.age}</td>
-//       <td>${item.phone}</td>
-//       <td><img src="../images/s/${imageUserArray[index]} "></td>
-//       </tr>`;
-//     });
-//   });
-// }
-// // printusersinfo();
+function printusersinfo() {
+  getUsers().then((result) => {
+    result.forEach((item,index) => {
+      container.innerHTML += `<tr>
+      <td>${item.name.first}</td> 
+      <td>${item.name.last}</td>
+      <td>${item.email}</td>
+      <td>${item.age}</td>
+      <!-----<td><img style="height:10vh; border-radius: 50%" src="../images/StuffImage/${imageUserArray[index]} "></td>>
+      </tr>`;
+    });
+  });
+}
+printusersinfo();
 
 async function addUser() {
   let addUserInfo = {
@@ -59,4 +60,3 @@ async function addUser() {
     </tr>`;
   }
 }
-addUser()

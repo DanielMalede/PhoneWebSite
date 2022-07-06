@@ -16,19 +16,19 @@
         background-size: 100% 100%;
     } 
 }
-body{
-    background-color: black;
-}
+/* body{
+    background-color: ;
+} */
 #headphoto{
     height: 25vh;
-    background-image: url(./images/HomePageImage/canvas.jpg);
+    background-image: url(./images/wallpaper/blue);
     background-size: 100% 100%;
 }
 a:hover{
     color:red
 }
 a{
-    color: rgb(63, 120, 243);
+    color: black;
     text-decoration: none   ;
 }
 nav{
