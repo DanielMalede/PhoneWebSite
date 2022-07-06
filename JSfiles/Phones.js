@@ -31,8 +31,8 @@ function printusersinfo() {
   getUsers().then((result) => {
     result.forEach((item,index) => {
       container.innerHTML += `
-            <div class=" px-3 pb-5 ">
-            <div class="bg-dark col card w-100" >
+            <div class=" px-3 pb-5 style="height: ;" ">
+            <div class="bg-dark col card " >
             <img src="../images/PhonesPhotos/${phonesImageArray[index]} ">
             <div class="card-body text-white">
             <p>${item.picture}</p>
