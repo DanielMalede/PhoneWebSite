@@ -1,9 +1,9 @@
 const API = `https://my-json-server.typicode.com/Jeck99/fake-server/devices`;
 let container = document.getElementById("container");
-let FaceImage = [];
+let counter = 0;
 async function getUsers() {
   try {
-    loadingGif.innerHTML = `    <img src="../images/GifLoad/loading.gif" alt="">`;
+    loadingGif.innerHTML = `<img src="../images/GifLoad/loading.gif" alt="">`;
     return await fetch(API).then((response) => response.json());
   } catch (error) {
   } finally {
@@ -31,9 +31,9 @@ function printusersinfo() {
   getUsers().then((result) => {
     result.forEach((item,index) => {
       container.innerHTML += `
-            <div id="cardphonenum[${index}]" class=" col w-25 px-4 pb-5  style="height: ;" ">
-            <div class="card col" >
-            <img class="card-img-top"src="../images/PhonesPhotos/${phonesImageArray[index]} ">
+            <div  class="  px-4 pb-5  style="height: ;" ">
+            <div id="cardphonenum${index}" class="card col" >
+            <img id="imagephone${index}" class="card-img-top"src="../images/PhonesPhotos/${phonesImageArray[index]} ">
             <div class="card-body">
             <h3>Brand :<b> ${item.brand}</b></h3>
             <br>

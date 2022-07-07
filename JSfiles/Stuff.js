@@ -1,5 +1,5 @@
 const API = `https://my-json-server.typicode.com/Jeck99/fake-server/users`;
-let container = document.getElementById("mytable");
+let MyTable = document.getElementById("mytable");
 async function getUsers() {
   try {
     return await fetch(API).then((response) => response.json());
@@ -15,20 +15,19 @@ let imageUserArray = [
   '6.jpg'
 ];
 
-function printusersinfo() {
+onload= function printusersinfo() {
   getUsers().then((result) => {
     result.forEach((item,index) => {
-      container.innerHTML += `<tr>
+      MyTable.innerHTML += `<tr class="">
       <td>${item.name.first}</td> 
       <td>${item.name.last}</td>
-      <td>${item.email}</td>
       <td>${item.age}</td>
-      <!-----<td><img style="height:10vh; border-radius: 50%" src="../images/StuffImage/${imageUserArray[index]} "></td>>
+      <td>${item.email}</td>
+      <td><img src="https://randomuser.me/api/portraits/med/men/${index}.jpg"></td>
       </tr>`;
     });
   });
 }
-printusersinfo();
 
 async function addUser() {
   let addUserInfo = {
@@ -53,10 +52,11 @@ async function addUser() {
     });
   } catch (error) {
   } finally {
-    container.innerHTML += `<tr>
-    <td>${AgeUser.value} : ${LastNameUser.value}</td> 
-    <td>${EmailUser.value}</td>
-    // <td>${PhoneUser.value}</td>
+    MyTable.innerHTML += `<tr>
+    <td>${name.last.FirstNameUser.value}</td> 
+    <td>${nameLastNameUser.value}</td> 
+    <td>${age.AgeUser.value}</td> 
+    <td>${email.EmailUser.value}</td> 
     </tr>`;
   }
 }

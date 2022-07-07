@@ -2,10 +2,9 @@
     background-color: black;
 } */
 span:hover{
-    background-color: silver;
+    background-color: #CF0000;
     border: solid 1px red;
-    border-radius: 7%;
-    color: black;
+    border-radius: 5%;
 }
 a:hover{
     color: black;
