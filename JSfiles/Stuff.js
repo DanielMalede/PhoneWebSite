@@ -23,6 +23,7 @@ onload= function printusersinfo() {
       <td>${item.name.last}</td>
       <td>${item.age}</td>
       <td>${item.email}</td>
+      <td>${item.phone}</td>
       <td><img src="https://randomuser.me/api/portraits/med/men/${index}.jpg"></td>
       </tr>`;
     });

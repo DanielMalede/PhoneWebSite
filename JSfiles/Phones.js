@@ -1,15 +1,23 @@
 const API = `https://my-json-server.typicode.com/Jeck99/fake-server/devices`;
 let container = document.getElementById("container");
 let counter = 0;
-async function getUsers() {
-  try {
-    loadingGif.innerHTML = `<img src="../images/GifLoad/loading.gif" alt="">`;
-    return await fetch(API).then((response) => response.json());
-  } catch (error) {
-  } finally {
-    loadingGif.innerHTML = ``;
-  }
-}
+let GB =[
+  "180",
+  "256",
+  "128",
+  "256",
+  "64",
+  "128",
+  "128",
+  "64",
+  "256",
+  "128",
+  "256",
+  "128",
+  "256",
+  "128",
+  "128",
+]
 let phonesImageArray = [
     '1phone.png',
     '2phone.png',
@@ -27,6 +35,15 @@ let phonesImageArray = [
     '14phone.png',
     '15phone.png',
 ]
+async function getUsers() {
+  try {
+    loadingGif.innerHTML = `<img src="../images/GifLoad/loading.gif" alt="">`;
+    return await fetch(API).then((response) => response.json());
+  } catch (error) {
+  } finally {
+    loadingGif.innerHTML = ``;
+  }
+}
 function printusersinfo() {
   getUsers().then((result) => {
     result.forEach((item,index) => {
@@ -39,6 +56,7 @@ function printusersinfo() {
             <br>
             <p><b>Brand</b> : ${item.brand} | <b>Color</b> : ${item.color}</p>
             <p><b>Realse</b> : ${item.createdAt} | <b>Ram</b> : ${item.ram}</p>
+            <p><b>GB</b> : ${GB[index]} | <b>Ram</b> : ${item.ram}</p>
             <p><b>Price</b> : ${item.price} | <b>In Stores</b> : ${item.isAvailable}</p>
             <br><br>
             </div>
