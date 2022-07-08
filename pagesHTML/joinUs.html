@@ -31,7 +31,7 @@
           <span class="nav-item px-lg-5"><a class="nav-link active" href="../pagesHTML/Phones.html">Phones</a></span>
           <span class="nav-item px-lg-5"><a class="nav-link active" href="../pagesHTML/About.html">About</a></span>
           <span class="nav-item px-lg-5"><a class="nav-link active" href="../pagesHTML/Contact.html">Contact</a></span>
-          <span class="nav-item px-lg-5"><a class="nav-link active" href="../pagesHTML/joinUs.html">JoinUs</a></span>
+          <span class="nav-item px-lg-5"><a class="nav-link active" href="../pagesHTML/joinUs.html">Join Us</a></span>
         </div>
       </div>
     </div>
@@ -74,7 +74,32 @@
       <textarea class="form-control" rows="5"></textarea>
     </div>
 
-    <button onclick="addUser()" class="btn btn-dark btn-block mb-4 text-white">Click To Submit</button>
+    
+    <!-- Button trigger modal -->
+    <button type="button" class="btn btn-primary btn-block mb-4 text-white" data-bs-toggle="modal" data-bs-target="#exampleModal">
+      click to Join
+    </button>
+    
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Wonderful !</h5>
+            <button type="button" class="btn-close " data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            Great what fun you joined !
+            <br>
+            you will receive an email notification about continuing to sign up
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Ok</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- <button onclick="userJoin()" class="btn btn-dark btn-block mb-4 text-white">Click To Submit</button> -->
   </div>
 
 
