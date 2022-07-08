@@ -29,7 +29,6 @@ onload= function printusersinfo() {
     });
   });
 }
-
 async function addUser() {
   let addUserInfo = {
     info: {
@@ -53,11 +52,11 @@ async function addUser() {
     });
   } catch (error) {
   } finally {
-    MyTable.innerHTML += `<tr>
-    <td>${name.last.FirstNameUser.value}</td> 
-    <td>${nameLastNameUser.value}</td> 
-    <td>${age.AgeUser.value}</td> 
-    <td>${email.EmailUser.value}</td> 
-    </tr>`;
+    // MyTable.innerHTML += `<tr>
+    // <td>${name.last.FirstNameUser.value}</td> 
+    // <td>${nameLastNameUser.value}</td> 
+    // <td>${age.AgeUser.value}</td> 
+    // <td>${email.EmailUser.value}</td> 
+    // </tr>`;
   }
 }

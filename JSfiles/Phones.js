@@ -67,7 +67,3 @@ function printusersinfo() {
         });
       }
       printusersinfo();
-      id="cardphonenum[${index}]"
-      // <p><b>Realse Date</b> : ${item.createdAt}</p>
-      // <p><b>Color</b> : ${item.color}</p>
-      // <p><b>In Stores</b> : ${item.isAvailable}</p>
