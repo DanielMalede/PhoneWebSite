@@ -6,6 +6,6 @@ span:hover{
     border-radius: 5%;
     box-shadow: 0px 7px 12px blue;
 }
-/* a:hover{
-    color: black;
-} */
+p,h1,h3{
+    font-family:'Times New Roman', Times, serif;
+}

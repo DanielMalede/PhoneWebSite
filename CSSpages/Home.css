@@ -35,3 +35,18 @@ a{
 nav{
     border-bottom: solid 1px rgb(18, 8, 216);
 }
+@keyframes getBigger {
+    0%{
+        
+    }
+    100%{
+        box-shadow: 1px 5px 10px black;
+        padding: 0.5vh;
+    }
+}
+p:hover{
+    animation: getBigger 1s  alternate;
+
+
+
+}
