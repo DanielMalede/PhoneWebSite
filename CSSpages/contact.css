@@ -1,18 +1,5 @@
-/* body{
-    background-color: black;
+@media screen and (min-width: 768px) {
+    #widthInfo {
+        width: 35vw;
+    }
 }
-label{
-    color: red;
-}
-h1{
-    color: red;
-}
-p{
-    color: red;
-}
-button{
-    color: red;
-}
-#formContainer{
-    background-image: linear-gradient(to bottom right, black , rgb(36, 35, 35),black);
-} */
