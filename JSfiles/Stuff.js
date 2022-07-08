@@ -24,7 +24,7 @@ onload= function printusersinfo() {
       <td>${item.age}</td>
       <td>${item.email}</td>
       <td>${item.phone}</td>
-      <td><img src="https://randomuser.me/api/portraits/med/men/${index}.jpg"></td>
+      <td><img style="box-shadow: 0px 8px 10px black;" src="https://randomuser.me/api/portraits/med/men/${index}.jpg"></td>
       </tr>`;
     });
   });

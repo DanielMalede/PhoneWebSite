@@ -35,6 +35,40 @@ let phonesImageArray = [
     '14phone.png',
     '15phone.png',
 ]
+let headjack = [
+  'Yes',
+  'Yes',
+  'No',
+  'Yes',
+  'Yes',
+  'No',
+  'No',
+  'Yes',
+  'No',
+  'No',
+  'Yes',
+  'Yes',
+  'Yes',
+  'Yes',
+  'No',
+]
+let camera = [
+  '40MP',
+  '20MP',
+  '12MP',
+  '15MP',
+  '24MP',
+  '18MP',
+  '25MP',
+  '30MP',
+  '50MP',
+  '25MP',
+  '13MP',
+  '30MP',
+  '25MP',
+  '30MP',
+  '16MP',
+]
 async function getUsers() {
   try {
     loadingGif.innerHTML = `<img src="../images/GifLoad/loading.gif" alt="">`;
@@ -56,7 +90,8 @@ function printusersinfo() {
             <br>
             <p><b>Brand</b> : ${item.brand} | <b>Color</b> : ${item.color}</p>
             <p><b>Realse</b> : ${item.createdAt} | <b>Ram</b> : ${item.ram}</p>
-            <p><b>GB</b> : ${GB[index]} | <b>Ram</b> : ${item.ram}</p>
+            <p><b>GB</b> : ${GB[index]} | <b>Camera</b> : ${camera[index]}</p>
+            <p><b>3.5 Jack</b> : ${headjack[index]} | <b>Ram</b> : ${item.ram}</p>
             <p><b>Price</b> : ${item.price} | <b>In Stores</b> : ${item.isAvailable}</p>
             <br><br>
             </div>
