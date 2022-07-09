@@ -2,20 +2,16 @@ const API = `https://my-json-server.typicode.com/Jeck99/fake-server/users`;
 let MyTable = document.getElementById("mytable");
 async function getUsers() {
   try {
+    loding.innerHTML = `<img src="../images/GifLoad/loading.gif" alt="">`;
     return await fetch(API).then((response) => response.json());
-  } catch (error) {}
+  } catch (error) {
+    errors(error)
+  }
+  finally{
+    loding.innerHTML = "";
+    }
 }
-
-let imageUserArray = [
-  '1.jpg',
-  '2.webp',
-  '3.jpg',
-  '4.jpg',
-  '5.png',
-  '6.jpg'
-];
-
-onload= function printusersinfo() {
+function printusersinfo() {
   getUsers().then((result) => {
     result.forEach((item,index) => {
       MyTable.innerHTML += `<tr class="">
@@ -29,34 +25,7 @@ onload= function printusersinfo() {
     });
   });
 }
-async function addUser() {
-  let addUserInfo = {
-    info: {
-      age: AgeUser.value,
-      name: {
-        last: LastNameUser.value,
-        first: FirstNameUser.value,
-      },
-      email: EmailUser.value,
-      phone: PhoneUser.value,
-      picture: PictureUser.value,
-    },
-  };
-  try {
-    await fetch(`${API}`, {
-      method: "post",
-      body: JSON.stringify(addUserInfo),
-      headers: {
-        "Content-Type": "application/json",
-      },
-    });
-  } catch (error) {
-  } finally {
-    // MyTable.innerHTML += `<tr>
-    // <td>${name.last.FirstNameUser.value}</td> 
-    // <td>${nameLastNameUser.value}</td> 
-    // <td>${age.AgeUser.value}</td> 
-    // <td>${email.EmailUser.value}</td> 
-    // </tr>`;
-  }
+printusersinfo()
+function errors(err) {
+    loding.innerHTML = "<h3>we are sorry currently we have a problem in our service please try again in a few minutes</h3>";
 }
