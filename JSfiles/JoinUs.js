@@ -9,7 +9,7 @@ async function getUsers() {
 //   getUsers().then((result) => {
 //     result.forEach((item,index) => {
 //       MyTable.innerHTML += `<tr class="">
-//       <td>${item.name.first}</td> 
+//       <td>${item.name.first}</td>
 //       <td>${item.name.last}</td>
 //       <td>${item.age}</td>
 //       <td>${item.email}</td>
@@ -19,7 +19,6 @@ async function getUsers() {
 //     });
 //   });
 // }
-
 async function userJoin() {
   let addUserInfo = {
     info: {
@@ -29,12 +28,10 @@ async function userJoin() {
         first: FirstNameUser.value,
       },
       email: EmailUser.value,
-      // phone: PhoneUser.value,
-      // picture: PictureUser.value,
     },
   };
   try {
-    loadinggiff.innerHTML = "<img src='../images/GifLoad/loading.gif'>"
+    loadinggiff.innerHTML = "<img src='../images/GifLoad/loading.gif'>";
     await fetch(`${API}`, {
       method: "post",
       body: JSON.stringify(addUserInfo),
@@ -42,10 +39,9 @@ async function userJoin() {
         "Content-Type": "application/json",
       },
     });
-  } catch (error) {
-  } finally {
-    alert("yes")
-    loadinggiff.innerHTML = ""
-
-  }
+    loadinggiff.innerHTML = "<h2>Great now we are official members ! <br> you can continue on the web site</h2>";
+  } 
+  catch (error) {
+  loadinggiff.innerHTML = "<h3>we are sorry currently we have a problem in our service please try again in a few minutes</h3>";
+  } 
 }

@@ -36,7 +36,6 @@
       </div>
     </div>
   </nav>
-  <div id="loadinggiff" class="container "></div>
   <div id="widthInfo" class="container col flex-column justify-content-center pt-5 p-md-5">
     <div class="d-flex justify-content-center pb-5">
       <img src="../images/Join Us/Join.jpg " class="w-50" alt="" style="height: 30vh;">
@@ -55,7 +54,7 @@
         </div>
       </div>
     </div>
-
+    
     <div class="form-outline mb-4">
       <label class="form-label" for="AgeUser">Age:</label>
       <input type="number" id="AgeUser" class="form-control border-primary" />
@@ -69,22 +68,17 @@
       <textarea class="form-control border-primary" rows="5"></textarea>
     </div>
     <button onclick="userJoin()" type="button" class="btn btn-primary btn-block mb-4 text-white" data-bs-toggle="modal"
-      data-bs-target="#exampleModal">click to Join</button>
-      <button >dvfgb</button>
+    data-bs-target="#exampleModal">click to Join</button>
     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
       <div class="modal-dialog">
-        <div class="modal-content">
+        <div id="BTNConfirm" class="modal-content">
           <div class="modal-header">
             <h5 class="modal-title" id="exampleModalLabel">Wonderful !</h5>
             <button type="button" class="btn-close " data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
-          <div class="modal-body">
-            Great what fun you joined !
-            <br>
-            you will receive an email notification about continuing to sign up
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Ok</button>
+          <div id="BTNConfirm" class="modal-body">
+
+            <div id="loadinggiff" class="container d-flex justify-content-center text-center"></div>
           </div>
         </div>
       </div>
