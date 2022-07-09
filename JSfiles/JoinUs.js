@@ -5,20 +5,20 @@ async function getUsers() {
   } catch (error) {}
 }
 
-onload= function printusersinfo() {
-  getUsers().then((result) => {
-    result.forEach((item,index) => {
-      MyTable.innerHTML += `<tr class="">
-      <td>${item.name.first}</td> 
-      <td>${item.name.last}</td>
-      <td>${item.age}</td>
-      <td>${item.email}</td>
-      <td>${item.phone}</td>
-      <td><img src="https://randomuser.me/api/portraits/med/men/${index}.jpg"></td>
-      </tr>`;
-    });
-  });
-}
+// onload= function printusersinfo() {
+//   getUsers().then((result) => {
+//     result.forEach((item,index) => {
+//       MyTable.innerHTML += `<tr class="">
+//       <td>${item.name.first}</td> 
+//       <td>${item.name.last}</td>
+//       <td>${item.age}</td>
+//       <td>${item.email}</td>
+//       <td>${item.phone}</td>
+//       <td><img src="https://randomuser.me/api/portraits/med/men/${index}.jpg"></td>
+//       </tr>`;
+//     });
+//   });
+// }
 
 async function userJoin() {
   let addUserInfo = {
@@ -29,11 +29,12 @@ async function userJoin() {
         first: FirstNameUser.value,
       },
       email: EmailUser.value,
-      phone: PhoneUser.value,
-      picture: PictureUser.value,
+      // phone: PhoneUser.value,
+      // picture: PictureUser.value,
     },
   };
   try {
+    loadinggiff.innerHTML = "<img src='../images/GifLoad/loading.gif'>"
     await fetch(`${API}`, {
       method: "post",
       body: JSON.stringify(addUserInfo),
@@ -44,6 +45,7 @@ async function userJoin() {
   } catch (error) {
   } finally {
     alert("yes")
+    loadinggiff.innerHTML = ""
+
   }
 }
-userJoin()
