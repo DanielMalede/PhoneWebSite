@@ -92,7 +92,7 @@ onload = function printusersinfo() {
             <p><b>Brand</b> : ${item.brand} | <b>Color</b> : ${item.color}</p>
             <p><b>Realse</b> : ${item.createdAt} | <b>Ram</b> : ${item.ram}</p>
             <p><b>GB</b> : ${GB[index]} | <b>Camera</b> : ${camera[index]}</p>
-            <p><b>3.5 Jack</b> : ${headjack[index]} | <b>Ram</b> : ${item.ram}</p>
+            <p><b>3.5 Jack</b> : ${headjack[index]} | <b>CPU</b> : ${item.ram}</p>
             <p><b>Price</b> : ${item.price} | <b>In Stores</b> : ${item.isAvailable}</p>
             <br><br>
             </div>
