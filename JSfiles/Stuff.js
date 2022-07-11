@@ -11,10 +11,27 @@ async function getUsers() {
     loding.innerHTML = "";
     }
 }
-function printusersinfo() {
-  getUsers().then((result) => {
-    result.forEach((item,index) => {
-      MyTable.innerHTML += `<tr class="">
+// function printusersinfo() {
+//   getUsers().then((result) => {
+//     result.forEach((item,index) => {
+//       MyTable.innerHTML += `<tr class="">
+//       <td>${item.name.first}</td> 
+//       <td>${item.name.last}</td>
+//       <td>${item.age}</td>
+//       <td>${item.email}</td>
+//       <td>${item.phone}</td>
+//       <td><img style="box-shadow: 0px 8px 10px black;" src="https://randomuser.me/api/portraits/med/men/${index}.jpg"></td>
+//       </tr>`;
+//     });
+//   });
+// }
+
+async function printusersinfo() {
+  const apiArr =await fetch(API).then(res => res.json())
+  console.log(inputArr);
+  const finallArr = [...apiArr, ...creatObjInInputArr(inputArr)]
+    finallArr.forEach((item,index) => {
+      MyTable.innerHTML += `<tr>
       <td>${item.name.first}</td> 
       <td>${item.name.last}</td>
       <td>${item.age}</td>
@@ -23,9 +40,5 @@ function printusersinfo() {
       <td><img style="box-shadow: 0px 8px 10px black;" src="https://randomuser.me/api/portraits/med/men/${index}.jpg"></td>
       </tr>`;
     });
-  });
-}
+  };
 printusersinfo()
-function errors(err) {
-    loding.innerHTML = "<h3>we are sorry currently we have a problem in our service please try again in a few minutes</h3>";
-}
